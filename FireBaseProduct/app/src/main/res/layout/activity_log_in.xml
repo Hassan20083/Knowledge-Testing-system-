@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F8F9"
+    android:orientation="vertical"
+    android:weightSum="4">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.9">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="220dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="70dp"
+               android:text="MCS MOBILE STORE"
+                android:textSize="24dp"
+                android:layout_marginLeft="70dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0">
+
+        <RelativeLayout
+            android:id="@+id/rel_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:background="@color/white">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+
+                <EditText
+                    android:id="@+id/mail"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@null"
+                    android:fontFamily="@font/opensans_semibold"
+                    android:gravity="start|center"
+                    android:hint="Username"
+                    android:inputType="textEmailAddress"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textColorHint="#BEBEBE"
+                    android:textSize="13sp"
+                    tools:ignore="RtlSymmetry" />
+
+                <View
+                    android:id="@+id/view1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_below="@+id/mail"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="-15sp"
+                    android:layout_marginEnd="20dp"
+                    android:background="#BEBEBE" />
+
+                <EditText
+                    android:id="@+id/edt_password"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/view1"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@null"
+                    android:fontFamily="@font/opensans_semibold"
+                    android:gravity="start|center"
+                    android:hint="password"
+                    android:inputType="textPassword"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textColorHint="#BEBEBE"
+                    android:textSize="13sp"
+                    tools:ignore="RtlSymmetry" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_below="@+id/edt_password"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="-15sp"
+                    android:layout_marginEnd="20dp"
+                    android:background="#BEBEBE" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/txtForget"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rel_login"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="50dp"
+            android:text="forgot_password"
+            android:visibility="gone"
+            android:textColor="#F7802A"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="50dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/rel_social"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp">
+
+            <Button
+                android:id="@+id/txt_login"
+                android:layout_width="322dp"
+                android:layout_height="50dp"
+                android:fontFamily="@font/opensans_bold"
+                android:gravity="center"
+                android:text="login"
+                android:textAllCaps="true"
+                android:textColor="@color/white" />
+
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/ix_line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rel_social"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            />
+
+        <RelativeLayout
+            android:id="@+id/rel_bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_below="@id/ix_line"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp">
+
+            <TextView
+                android:id="@+id/txt_dont"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/opensans_bold"
+                android:text="dont_have_account"
+                android:textColor="@color/teal_700"
+                android:textSize="15sp"
+                android:visibility="gone"/>
+
+            <Button
+                android:id="@+id/txt_register1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="3dp"
+                android:layout_toEndOf="@+id/txt_dont"
+                android:fontFamily="@font/opensans_bold"
+                android:text="Register"
+                android:textAllCaps="true"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                android:layout_marginLeft="3dp"
+                android:layout_toRightOf="@+id/txt_dont" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>
